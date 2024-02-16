@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.course {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.course img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.course h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.course p {
+    color: #666;
+}
+
+.course a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.course a:hover {
+    background-color: #555;
+}
+/* styles.css */
+
+/* Header */
+header {
+    background-color: #fa5205;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fadeInDown 1s ease;
+}
+
+/* Navigation */
+nav {
+    background-color: #090909;
+    padding: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    animation: fadeIn 1s ease;
+}
+
+/* Footer */
+footer {
+    background-color: #f41f07;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* styles.css */
+
+.teacher-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.teacher {
+    flex: 0 0 calc(50% - 10px);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.teacher img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Add animation */
+}
+
+.teacher img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.teacher h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.teacher p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Python Course</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Introduction to Python Course</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Course Overview</h2>
+            <p>Overview of the Introduction to Python course goes here.</p>
+        </section>
+        <section>
+            <h2>Course Curriculum</h2>
+            <ul>
+                <li>Introduction to Python Basics</li>
+                <li>Data Structures in Python</li>
+                <li>Python Libraries and Frameworks</li>
+                <!-- Add more curriculum items as needed -->
+            </ul>
+        </section>
+        <section>
+            <h2>Lecture Videos</h2>
+            <div class="video">
+                <h3>Introduction to Python Basics</h3>
+                <video id="pythonVideo" controls>
+                    <source src="What Is Artificial Intelligence_ _ Artificial Intelligence (AI) In 10 Minutes _ Edureka.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Progress: <span id="progress1">0</span>% Completed</p>
+            </div>
+            <!-- Add more video sections as needed -->
+        </section>
+        <section>
+            <h2>Instructor</h2>
+            <p>Instructor information for Introduction to Python course goes here.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sample Website. All rights reserved.</p>
+    </footer>
+    <script>
+        const video = document.getElementById('pythonVideo');
+        const progress = document.getElementById('progress1');
+
+        video.addEventListener('timeupdate', function() {
+            const progressValue = (this.currentTime / this.duration) * 100;
+            progress.textContent = progressValue.toFixed(2);
+        });
+    </script>
+</body>
+</html>

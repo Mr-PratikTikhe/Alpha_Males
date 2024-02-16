@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login form</title>
+</head>
+<body>
+   
+    <div class="page">
+        <div class="logo">
+    
+        </div>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="button"></div>
+                <button type="button" class="toggle-button" onclick="login()">LogIn</button>
+                <button type="button" class="toggle-button" onclick="register()">Register</button>
+            </div>
+            <div class="Welcome"><p>Welcome to Learning Management System !</p></div>
+            <form id="login" class="input-group">
+                <input type="text" id="userId" class="input-field" placeholder="User Id" required>
+                <input type="password" id="password" class="input-field" placeholder="Password" required> 
+                <input type="checkbox" class="checkbox"><span>User Id : alphamales@gmail.com <br> Password: Pass@123</span>
+                <button type="button" class="submit-btn" onclick="validateLogin()">LogIn</button>
+                <h1></h1>
+            </form>
+
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Enter Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox"><span>I agree to the terms and condition</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("button");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+
+        function validateLogin() {
+            var userId = document.getElementById("userId").value;
+            var password = document.getElementById("password").value;
+
+            // Check if the entered credentials match the predefined ones
+            if (userId === "alphamales@gmail.com" && password === "Pass@123") {
+                // Redirect to the main landing page
+                window.location.href = "index.html";
+            } else {
+                // Show an error message or handle invalid credentials
+                alert("Invalid login credentials. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
